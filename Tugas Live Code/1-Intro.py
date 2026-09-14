@@ -2,14 +2,14 @@ import cv2
 import numpy as np
 
 # 1. Read n Show Img
-image = cv2.imread("image.png")
+image = cv2.imread("Tugas Live Code/image.png")
 print(f"Shape: {image.shape}, Dtype: {image.dtype}")
 cv2.imshow("Foto Aseli", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # 2. Filter Warna Citra
-img = cv2.imread("image.png")
+img = cv2.imread("Tugas Live Code/image.png")
 
 #filter merah
 img_merah = img.copy()
