@@ -1,6 +1,8 @@
 # PCV TUGAS SEMESTER 5
-**Nama:** Reidita Eirene Anastasia Katampuge
-**NRP:** 5024241001
+| | |
+|---|---|
+| **Nama** | Reidita Eirene Anastasia Katampuge |
+| **NRP** | 5024241001 |
 
 ## PCV - Pengolahan Citra dan Video
 Menggunakan bahasa pemrograman Python dengan library OpenCV dan NumPy. Disarankan menggunakan VSCode atau Spyder.
