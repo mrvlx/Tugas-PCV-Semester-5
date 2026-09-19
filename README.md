@@ -36,4 +36,22 @@ Program dasar pengolahan citra dan video yang berisi:
    - Tampilan side-by-side: asli vs filter
    - **Implementasi**: Pipeline dengan `cv2.VideoCapture` dan NumPy
 
+#### Output
+
+**Foto Asli**
+
+<img src="Output/1-intro/foto aseli.png" width="400">
+
+**Filter Warna Citra (BGR)**
+
+| Merah | Hijau | Biru |
+|---|---|---|
+| <img src="Output/1-intro/output filter warna merah.png" width="250"> | <img src="Output/1-intro/output filter warna hijau.png" width="250"> | <img src="Output/1-intro/output filter warna biru.png" width="250"> |
+
+**Filter Warna Video (Webcam)**
+
+| Mode Merah | Mode Hijau |
+|---|---|
+| <img src="Output/1-intro/Filter video merah.png" width="400"> | <img src="Output/1-intro/Filter video hijau.png" width="400"> |
+
 ---
