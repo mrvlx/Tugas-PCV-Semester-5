@@ -55,3 +55,25 @@ Program dasar pengolahan citra dan video yang berisi:
 | <img src="Output/1-intro/Filter video merah.png" width="250"> | <img src="Output/1-intro/Filter video hijau.png" width="250"> | <img src="Output/1-intro/Filter video biru.png" width="250"> |
 
 ---
+ 
+### 2-TI-EQ (Transformasi Intensitas & Ekualisasi Histogram)
+Program pengolahan citra grayscale yang berisi:
+ 
+1. **Transformasi Intensitas (manual, tanpa `cv2.LUT`)**
+   - **Negatif**: `s = 255 - r`
+   - **Logaritmik**: `s = c * log(1 + r)`
+   - **Gamma Correction**: `s = 255 * (r/255)^gamma` (gamma 0.4 = lebih terang, gamma 2.5 = lebih gelap)
+   - **Contrast Stretching**: pemetaan 3 ruas linear dengan titik kontrol `(r1, s1)` dan `(r2, s2)`
+   - **Thresholding**: binerisasi manual dengan `np.where(img >= 128, 255, 0)`
+2. **Ekualisasi Histogram (manual, tanpa `cv2.equalizeHist`)**
+   - Hitung histogram dengan loop manual
+   - Hitung PDF (probabilitas) dan CDF (distribusi kumulatif)
+   - Bentuk LUT pemetaan `sk = round((L-1) * CDF)`
+   - Terapkan LUT ke citra asli
+   - Bandingkan histogram sebelum vs sesudah ekualisasi
+3. **Visualisasi**
+   - Grid 3x3 menampilkan semua hasil transformasi + histogram menggunakan `matplotlib`
+#### Output
+ 
+<img src="Output/2-ti-eq.py/ini pcv2.png" width="700">
+---
