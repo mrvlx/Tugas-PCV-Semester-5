@@ -50,8 +50,8 @@ Program dasar pengolahan citra dan video yang berisi:
 
 **Filter Warna Video (Webcam)**
 
-| Mode Merah | Mode Hijau |
-|---|---|
-| <img src="Output/1-intro/Filter video merah.png" width="400"> | <img src="Output/1-intro/Filter video hijau.png" width="400"> |
+| Mode Merah | Mode Hijau | Mode Biru |
+|---|---|---|
+| <img src="Output/1-intro/Filter video merah.png" width="250"> | <img src="Output/1-intro/Filter video hijau.png" width="250"> | <img src="Output/1-intro/Filter video biru.png" width="250"> |
 
 ---
